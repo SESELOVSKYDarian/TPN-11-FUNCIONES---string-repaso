@@ -17,17 +17,17 @@ void MostrarMatriz(int filas, int columnas)
 {
 	string matriz [filas][columnas];
 	string alt = "L";
-    for (int i = 0; i < filas; ++i)
+    for (int i = 0; i < filas; i++)
 	{
-        for (int j = 0; j < columnas; ++j)
+        for (int j = 0; j < columnas; j++)
 		{
             matriz[i][j] = alt;
             alt = (alt == "L") ? "O" : "L";
         }
     }
-    for (int i = 0; i < filas; ++i)
+    for (int i = 0; i < filas; i++)
 	{
-        for (int j = 0; j < columnas; ++j)
+        for (int j = 0; j < columnas; j++)
 		{
             cout << matriz[i][j] << " ";
         }
